@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#03060b" />
+    <title>归土 Project | 微电影展览网站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="is-locked">
+    <div class="prelude" id="prelude" aria-label="归土海报预览">
+      <img class="prelude-blur" id="preludeBlur" src="assets/poster-dark.png" alt="" />
+      <div class="prelude-shade" aria-hidden="true"></div>
+      <section class="poster-stage" aria-live="polite">
+        <div class="poster-frame">
+          <img id="posterImage" src="assets/poster-dark.png" alt="归土电影海报" />
+          <div class="poster-switcher">
+            <span id="posterModeText">暗色海报</span>
+            <label class="switch" title="切换海报">
+              <input id="posterSwitch" type="checkbox" aria-label="切换亮色或暗色海报" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <button class="enter-button" id="enterButton" type="button">进入项目</button>
+      </section>
+    </div>
+
+    <header class="site-nav">
+      <a class="brand" href="#home">归土 Project</a>
+      <nav aria-label="主导航">
+        <a href="#home">概览</a>
+        <a href="#worldview">世界观</a>
+        <a href="#archive">档案</a>
+        <a href="#script">剧本</a>
+        <a href="#storyboard">分镜</a>
+        <a href="#symbol">剧本阅读</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="section hero">
+        <img class="hero-bg" src="assets/space-planet-bg.png" alt="" />
+        <div class="space-dust" aria-hidden="true"></div>
+        <div class="section-inner hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">RETURN TO THE EARTH</p>
+            <h1>归土 Project</h1>
+            <p class="lead">所有离开，最终都在回到土地。</p>
+            <p class="sublead">百年以后，人类重返地球，寻找被遗忘的自己。</p>
+            <p class="core-line">文明不是被带走才得以保存，而是被记得，才没有消失。</p>
+            <div class="hero-actions">
+              <a class="button primary" href="#script">阅读剧本</a>
+              <a class="button ghost" href="#storyboard">查看分镜</a>
+            </div>
+          </div>
+          <aside class="info-card reveal">
+            <dl>
+              <div><dt>PROJECT</dt><dd>归土计划</dd></div>
+              <div><dt>THEME</dt><dd>家 / 回归 / 时间</dd></div>
+              <div><dt>TONE</dt><dd>沉重 / 诗意 / 克制</dd></div>
+              <div><dt>MODE</dt><dd>Script Showcase</dd></div>
+            </dl>
+          </aside>
+        </div>
+      </section>
+
+      <section id="worldview" class="section worldview">
+        <img class="section-bg right" src="assets/worldview-reference.png" alt="" />
+        <div class="section-inner">
+          <div class="section-head reveal">
+            <p class="eyebrow">WORLDVIEW</p>
+            <h2>失去故土之后，人类还剩下什么？</h2>
+            <p>这是关于文明消逝与重返的世界观设定。</p>
+          </div>
+          <div class="timeline reveal" aria-label="归土计划时间轴">
+            <button class="active">生态崩溃</button>
+            <button>星迁计划</button>
+            <button>文明遗落</button>
+            <button>百年之后</button>
+            <button>归土计划</button>
+          </div>
+          <div class="three-grid">
+            <article class="glass-card plan-card plan-migration reveal" role="button" tabindex="0" data-plan-title="星迁计划" data-plan-card="assets/plan-migration-card.png">
+              <span>01</span>
+              <h3>星迁计划</h3>
+              <p>地球生态系统不可逆崩溃，人类离开故土，向深空迁徙，寻找新的生存可能。</p>
+            </article>
+            <article class="glass-card plan-card plan-return reveal" role="button" tabindex="0" data-plan-title="归土计划" data-plan-card="assets/plan-return-card.png">
+              <span>02</span>
+              <h3>归土计划</h3>
+              <p>百年之后，人类重返地球，试图重建家园，找回失去的一切。</p>
+            </article>
+            <article class="glass-card reveal large-quote">
+              <span>03</span>
+              <h3>核心冲突</h3>
+              <p>技术可以保存资料，<br />但能不能保存故乡？</p>
+            </article>
+          </div>
+          <div class="concept-row">
+            <article class="concept-card reveal"><b>文明数据库</b><p>以数据形式延续文明的火种。</p></article>
+            <article class="concept-card reveal"><b>遗存区</b><p>存放地球遗留的物质与痕迹。</p></article>
+            <article class="concept-card reveal"><b>记忆缺口</b><p>无法被记录的空白，如文明记忆的裂缝。</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="archive" class="section archive">
+        <div class="section-inner">
+          <div class="section-head reveal">
+            <p class="eyebrow">MISSION ARCHIVE</p>
+            <h2>第七文明回收小队</h2>
+            <p>小队成员 / AI 系统 / 关键道具档案</p>
+          </div>
+          <div class="people-grid">
+            <article class="person-card reveal" role="button" tabindex="0" data-person-image="assets/person-linzhou.png" data-person-title="林舟" data-person-role="文明回收员 / 记录员" data-person-keywords="理性、冷静、出生于太空、第一次触摸地球" data-person-arc="从“文明可以被上传”到“文明需要被记得”。"><img class="person-portrait" src="assets/person-linzhou-thumb.png" alt="林舟人物设定" /><span>人物 01</span><h3>林舟</h3><p>文明回收员 / 记录员</p><b>理性、冷静、出生于太空、第一次触摸地球</b><small>从“文明可以被上传”到“文明需要被记得”。</small></article>
+            <article class="person-card reveal" role="button" tabindex="0" data-person-image="assets/person-chenyan.png" data-person-title="陈砚" data-person-role="语言与古文字研究员" data-person-keywords="人文学者、祖辈来自地球、相信文明是生活痕迹" data-person-arc="引导林舟理解文明不是冰冷资料。"><img class="person-portrait" src="assets/person-chenyan-thumb.png" alt="陈砚人物设定" /><span>人物 02</span><h3>陈砚</h3><p>语言与古文字研究员</p><b>人文学者、祖辈来自地球、相信文明是生活痕迹</b><small>引导林舟理解文明不是冰冷资料。</small></article>
+            <article class="person-card ai reveal" role="button" tabindex="0" data-person-image="assets/person-xuanniao.png" data-person-title="AI 玄鸟" data-person-role="随行人工智能系统" data-person-keywords="扫描、翻译、建模、精准、无法理解乡愁" data-person-arc="代表技术理性。"><img class="person-portrait" src="assets/person-xuanniao-thumb.png" alt="AI 玄鸟人物设定" /><span>人物 03</span><h3>AI 玄鸟</h3><p>随行人工智能系统</p><b>扫描、翻译、建模、精准、无法理解乡愁</b><small>代表技术理性。</small></article>
+            <article class="person-card elder reveal" role="button" tabindex="0" data-person-image="assets/person-elder.png" data-person-title="老人影像" data-person-role="百年前留守地球的老人" data-person-keywords="托付、记忆、族谱、最后的守护者" data-person-arc="整个故事的情感核心。"><img class="person-portrait" src="assets/person-elder-thumb.png" alt="老人影像人物设定" /><span>人物 04</span><h3>老人影像</h3><p>百年前留守地球的老人</p><b>托付、记忆、族谱、最后的守护者</b><small>整个故事的情感核心。</small></article>
+          </div>
+          <div class="log-panel reveal">
+            <b>AI 玄鸟识别面板</b>
+            <p data-log>01 检测到汉字残留：家 / 春 / 礼 / 归</p>
+            <p data-log>02 检测到礼制建筑：祠堂</p>
+            <p data-log>03 检测到未知行为：归来者向先人表达记忆确认</p>
+            <p data-log>04 林舟修正：这叫祭祖</p>
+          </div>
+          <div class="artifact-grid">
+            <article class="artifact-card artifact-scanner reveal"><span>01</span><b>扫描仪</b><p>代表科技记录</p></article>
+            <article class="artifact-card artifact-wrist reveal"><span>02</span><b>腕部终端</b><p>代表任务系统</p></article>
+            <article class="artifact-card artifact-incense reveal"><span>03</span><b>香炉与残香</b><p>代表祭祖与文明记忆</p></article>
+            <article class="artifact-card artifact-genealogy reveal"><span>04</span><b>族谱</b><p>代表代际传承</p></article>
+            <article class="artifact-card artifact-beacon reveal"><span>05</span><b>文明信标</b><p>代表重新命名遗址</p></article>
+            <article class="artifact-card artifact-pendant reveal"><span>06</span><b>透明土壤吊坠</b><p>代表“带一点家”</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="script" class="section script-hall">
+        <div class="script-nav">
+          <b>归土 Project</b>
+          <button class="active" data-scene="0"><span>01</span><strong>返回地球</strong></button>
+          <button data-scene="1"><span>02</span><strong>废墟中的汉字</strong></button>
+          <button data-scene="2"><span>03</span><strong>地下祠堂</strong></button>
+          <button data-scene="3"><span>04</span><strong>一炷香</strong></button>
+        </div>
+        <div class="script-stage section-inner">
+          <div class="script-copy reveal">
+            <p class="eyebrow">SCRIPT HALL / 四个核心场景</p>
+            <h2>从数据，到故乡</h2>
+            <p class="scene-index" id="sceneIndex">01 返回地球</p>
+            <blockquote id="sceneQuote">“我们不是回来考古的。是回来认祖。”</blockquote>
+            <p id="sceneText">这不是一次普通的科考任务，而是人类在百年之后重新面对自己的来处。</p>
+          </div>
+          <figure class="scene-visual reveal">
+            <video id="sceneVideo" controls playsinline preload="metadata" aria-label="返回地球场景视频">
+              <source src="assets/scene-01.mp4" type="video/mp4" />
+            </video>
+          </figure>
+        </div>
+      </section>
+
+      <section id="storyboard" class="section storyboard">
+        <div class="section-inner">
+          <div class="section-head reveal">
+            <p class="eyebrow">VISUAL PROGRESSION / STORYBOARD GALLERY</p>
+            <h2>分镜如何环绕成归途</h2>
+            <p>拖动或滚动这组横向分镜，让冷灰、暗金与微光在同一条弧线上缓慢展开。</p>
+          </div>
+          <div class="circular-gallery-shell reveal">
+            <div class="gallery-ghost-title" aria-hidden="true">归途分镜</div>
+            <div class="circular-gallery" id="shotGrid" aria-label="分镜环形画廊"></div>
+            <div class="gallery-caption" id="galleryCaption">
+              <span>01</span>
+              <b>地球轨道</b>
+              <p>冷灰色、低饱和、机械感，地球像一枚沉默的旧星体。</p>
+            </div>
+            <div class="gallery-controls" aria-label="分镜画廊控制">
+              <button id="galleryPrev" type="button" aria-label="上一张">‹</button>
+              <span id="galleryCounter">01 / 42</span>
+              <button id="galleryNext" type="button" aria-label="下一张">›</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="symbol" class="section symbols">
+        <canvas class="symbols-galaxy" id="symbolsGalaxy" aria-hidden="true"></canvas>
+        <div class="section-inner">
+          <article class="script-read-page reveal" aria-label="script reading">
+            <header class="script-read-head">
+              <p class="eyebrow">FULL SCRIPT / READING ROOM</p>
+              <p class="script-kicker">&#24494;&#30005;&#24433;&#21095;&#26412;</p>
+              <h2>&#24402;&#22303;</h2>
+            </header>
+
+            <div class="script-scroll" aria-label="script content">
+<pre>微电影剧本
+文明不是被带走才得以保存，而是被记得，才没有消失。
+
+一、核心概念
+片名：《归土》
+类型：科幻 / 文明探索 / 人文情感
+建议时长：约10分钟
+主题表达：当人类失去故土，文明不只是被保存的数据，而是刻在土地、器物、语言、礼仪与记忆中的精神归属。
+一句话故事：百年以后，人类重返已经死寂的地球，一支文明回收小队在废墟中寻找遗失的中华文明，却在一座被黄沙掩埋的古老祠堂中，发现了比文物更重要的东西。
+
+二、世界观设定
+百年前，地球生态系统彻底崩溃。海洋酸化，森林消亡，动物灭绝，人类被迫启动“星迁计划”，逃往轨道殖民地和外星移民基地。
+由于当时技术有限，人类只能优先转移人口、基础科学数据、能源技术和生存设备。大量文明遗产、民间记忆、地方文化、非物质文化遗产被迫遗留在地球。
+百年后，人类文明的技术已经高度发达。新一代人类出生在太空，没有见过真正的土地、河流、树木和家园。于是，人类启动“归土计划”，派遣文明回收队返回地球，寻找那些被遗忘在废墟中的文明碎片。
+
+三、主要人物
+林舟：女，26岁，文明回收队记录员。出生于火星殖民城，从未见过地球。她冷静、理性，最初认为文明只要被扫描、建模、上传，就算被保存。
+陈砚：男，32岁，语言与古文字研究员。祖辈来自地球，他对中华文明有强烈情感，但自己也只是在档案和数据库里认识中国。他相信文明不是数据，而是“被人活过的痕迹”。
+AI“玄鸟”：文明回收队的随行智能系统。负责扫描、翻译、建模、修复古遗迹。它理性、精准，却无法真正理解“乡愁”“祭祀”“家族”“根”这样的概念。
+老人影像：百年前一位留在地球上的老人。他在最后时刻录下了一段影像，守护着一处地方文明遗存。
+
+四、完整微电影剧本
+01 外太空 / 地球轨道 / 远景 / 冷寂
+黑暗宇宙中，一颗灰蓝色的星球缓缓转动。它不再是记忆中的蓝色星球。大气层浑浊，陆地大片荒漠化，海洋呈现暗沉的灰绿色。
+一艘银白色飞船缓缓接近地球。
+旁白 林舟：人类离开地球的第一百零三年，我们终于有能力回来了。
+飞船舱内，林舟站在观察窗前，看着远处的地球。她的眼神里没有激动，更多是陌生。
+AI玄鸟：归土计划，第七文明回收小队，已进入地球同步轨道。目标区域：东亚大陆，旧中国文明遗存带。
+陈砚看着屏幕上逐渐放大的地球影像，轻声说。
+陈砚：我们不是回来考古的。
+林舟：那是什么？
+陈砚没有立刻回答，只是望着地球。
+陈砚：是回来认祖。
+画面切黑。
+
+02 飞船登陆舱 / 内景 / 冷白光
+林舟检查记录设备。她的手腕上投射出任务清单：扫描遗址、回收文字资料、建立三维文明模型、上传至人类文明数据库。
+林舟：只要数据完整，文明就不会丢失。
+陈砚坐在一旁，手里握着一块破旧的木牌。木牌上刻着一个模糊的汉字：归。
+陈砚：你觉得，一个人把母亲的声音录下来，就等于母亲还在吗？
+林舟：至少声音没有消失。
+陈砚：可声音不知道你冷不冷，也不会叫你回家吃饭。
+林舟没有回答。登陆舱剧烈震动，穿过厚重云层。舷窗外，灰黄色的大地扑面而来。
+
+03 地球表面 / 旧中原地区 / 远景 / 荒凉
+登陆舱降落在一片废弃平原上。舱门打开，死寂的风卷起沙尘。没有鸟鸣，没有虫声，没有树叶摩擦声。只有风。
+林舟踏上地面。她低头看着脚下的尘土，缓缓蹲下，伸手触碰。这是她第一次触摸真正的地球土壤。
+AI玄鸟：空气毒性指数：低。生态生命反应：零。建议行动时间不超过四小时。
+林舟把一小撮土放进采样管。
+林舟：这里就是地球？
+陈砚环顾四周。远处，残破的城市轮廓被黄沙覆盖。高楼像折断的骨骼。
+陈砚：不。这里曾经是家。
+
+04 废弃城市 / 街道 / 中景 / 静默
+两人穿过城市废墟。街道早已被沙土掩埋。路牌断裂，只剩下半个字。便利店的招牌褪色。学校大门倒塌。墙上残留着模糊的标语。
+AI玄鸟：检测到汉字残留：仁、礼、家、春。正在建立语义关联。
+林舟：仁，古代伦理概念。礼，社会秩序规范。家，血缘共同体。春，季节单位。
+陈砚：说得都对。但也都不够。
+他们走到一所废弃小学前。教室墙壁半塌，黑板还在。黑板上残留着百年前没有擦干净的粉笔字：明日背诵《静夜思》。
+林舟：静夜思？
+陈砚走近，看着那行字。他轻声背诵。
+陈砚：床前明月光，疑是地上霜。举头望明月，低头思故乡。
+林舟沉默。天空灰暗，没有月亮。
+林舟：故乡……是地理位置吗？
+陈砚：也许是你离开以后，才开始疼的地方。
+
+05 地下遗址入口 / 黄昏 / 悬疑
+AI玄鸟扫描到地下异常结构。
+AI玄鸟：地下三十七米处存在完整建筑空间。年代推测：二十一世纪以前。结构类型：祠堂、庙宇或地方礼制建筑。
+沙地下方，一块石碑露出一角。陈砚清理沙土，石碑上刻着几个字：慎终追远。
+AI玄鸟：慎终追远：谨慎对待死亡，追念久远祖先。常见于中华祭祀文化。
+林舟：为什么要追念已经死去的人？
+陈砚：因为人不是从自己开始的。
+两人打开地下入口，进入黑暗。
+
+06 地下祠堂 / 内景 / 暗金色光
+地下空间保存得异常完整。这里像一座被时间封存的祠堂。木梁斑驳，牌位蒙尘，墙上有褪色的年画。中央供桌上摆着干裂的瓷碗、香炉和一盏早已熄灭的油灯。
+林舟打开照明灯。光照亮了墙上的壁画。画面里有人耕种、祭祖、舞龙、写春联、做灯笼、包饺子、唱戏、送别、迎亲。
+这些不是帝王将相，也不是宏大的历史事件，而是普通人的生活。林舟看着这些图像，第一次停下了扫描动作。
+林舟：这些……不是重要历史节点。
+陈砚：文明本来就不只在博物馆里。
+他走到供桌前，轻轻吹去一个木盒上的尘土。木盒中放着一本残破族谱、一只毛笔、一枚铜钱、一小块红布，还有一个老旧影像存储器。
+AI玄鸟：检测到可读取影像资料。是否播放？
+林舟看向陈砚。陈砚点头。
+
+07 祠堂中央 / 老人影像出现 / 温暖而苍凉
+空气中投射出一个老人的全息影像。影像很不稳定，时而闪烁。老人坐在祠堂里，身后也是同样的牌位和香炉。
+老人影像：如果有人还能看到这段话，说明你们真的回来了。
+老人影像：走的时候太急了，很多东西带不走。大件的带不走，老物件带不走，村口那棵槐树带不走，祠堂也带不走。
+老人影像：有人说，这些不重要。重要的是活下去。对，活下去最重要。
+老人停顿，眼眶微红。
+老人影像：可人活下去以后，总得知道自己是谁。
+老人拿起一本族谱。
+老人影像：这里面写的不是大人物。都是种地的、教书的、做木匠的、当兵的、开小店的。可他们一代一代，把话传下来，把饭做下来，把节过下来，把名字记下来。
+老人影像：孩子，文明不是你们带走了多少金银器物，也不是数据库里有多少条记录。
+老人影像：文明是一个人知道，自己不是孤零零来到世上的。
+老人影像：如果你们回来了，替我们上一炷香吧。不为神仙，也不为保佑。就是告诉他们，后人还记得。
+影像中断。祠堂陷入安静。
+
+08 祠堂 / 内景 / 情感转折
+林舟站在原地，久久没有说话。AI玄鸟打破沉默。
+AI玄鸟：资料完整度较高。建议立即扫描上传。此处物理结构不具备长期保存条件。
+林舟看着供桌上的香炉。
+林舟：玄鸟，生成一炷香。
+AI玄鸟：任务清单中无祭祀行为。
+林舟：新增任务。
+AI玄鸟：无法理解该行为的功能意义。
+林舟：我也不完全理解。
+她拿起一支残破的香。香早已不能燃烧。陈砚从装备包里取出微型热源，小心点燃。一缕微弱的烟升起。
+这是死寂地球上，百年后重新升起的第一缕香烟。林舟和陈砚站在供桌前。两人没有跪拜，只是安静地低头。
+林舟：我们回来了。
+陈砚：我们还记得。
+香烟缓缓升向黑暗的屋顶。AI玄鸟开始记录这一幕。
+AI玄鸟：正在记录未知文明行为：归来者向先人表达记忆确认。
+林舟：不叫未知行为。叫祭祖。
+
+09 祠堂壁画 / 文明复苏视觉段落
+随着扫描设备启动，整个祠堂被柔和的金色光线覆盖。AI玄鸟将壁画、族谱、文字、器物、影像逐一数字化。
+但这一次，不再是冰冷的数据扫描。壁画仿佛被光唤醒：有人在清晨贴春联；有人在院中包饺子；孩子举着灯笼奔跑；老人坐在门口讲故事；戏台上锣鼓响起；纸鸢飞上天空；毛笔落在宣纸上；龙灯在人群中游动；一双手把饭碗递给另一双手。
+这些影像像记忆一样在祠堂中流动。林舟站在光影中央，第一次露出柔软的神情。
+林舟旁白：我曾以为，文明是一种可以被复制的资料。
+林舟旁白：后来我才明白，文明也是一声称呼，一次等待，一盏灯，一顿饭，一条回家的路。
+
+10 地球表面 / 黎明 / 开阔
+林舟和陈砚走出地下祠堂。远处天边出现微弱的晨光。荒凉的大地依旧没有生命，但光线比之前温暖。
+林舟回头看向祠堂入口。她将一枚小型文明信标插入土地。信标启动，投射出一行汉字：中华文明遗存点001：归土祠堂。
+AI玄鸟：是否将该遗址标记为可迁移文明数据？
+林舟：不。标记为人类精神原乡。
+陈砚看着她，微微笑了。飞船远处降下牵引光束。林舟准备离开，却忽然停住。
+她从采样管中倒出一点土，放进一个透明吊坠里，挂在胸前。
+陈砚：带走样本？
+林舟：带一点家。
+
+11 飞船返航 / 地球轨道 / 结尾
+飞船离开地表，升入云层。地球再次出现在窗外。林舟坐在舱内，开始录制任务报告。
+林舟：归土计划，第七文明回收小队，第一次地表任务完成。
+林舟：本次任务回收文物三百七十二件，影像资料六十四组，文字资料一千九百二十七页，建筑结构模型一处。
+她沉默片刻，关闭官方报告界面，重新打开私人记录。
+林舟：私人记录，林舟。今天，我第一次知道，地球不是旧档案里的母星编号。
+她望向远处的星球。
+林舟：它叫故乡。
+画面中，飞船渐渐远离。地球静静悬在黑暗宇宙中。
+字幕：文明不是被带走才得以保存，而是被记得，才没有消失。
+画面切黑。
+
+五、影片风格建议
+前半段：冷灰色、低饱和、机械感、荒凉、静默，突出地球死亡后的空旷。
+进入祠堂后：暗金色、尘埃光、木质纹理、东方礼制空间，形成强烈的文明温度。
+结尾：灰蓝色地球与微弱晨光结合，既不完全乐观，也保留希望。
+
+六、核心情绪递进
+• 陌生：新一代人类不认识地球，只把它当作任务现场。
+• 震撼：他们在废墟中发现文明并不是宏大符号，而是普通人的生活。
+• 理解：通过老人影像，他们明白“文明”不是数据库，而是人与祖先、土地、记忆之间的连接。
+• 归属：林舟从“记录者”变成“后人”，完成情感上的认祖归宗。
+
+七、宣传语提炼
+1. 百年以后，人类重返地球，寻找被遗忘的自己。
+2. 我们逃离过故乡，却从未真正离开文明。
+3. 当最后一缕香烟升起，失落的文明终于被后人记起。
+4. 文明不是数据，是有人还记得回家的路。
+5. 带走一捧土，也带回一个名字：故乡。</pre>
+            </div>
+          </article>
+                  </div>
+      </section>
+      <section id="screening" class="section screening" aria-label="full film screening room">
+        <div class="screening-dust" aria-hidden="true"></div>
+        <div class="section-inner screening-inner">
+          <header class="screening-head reveal">
+            <p class="eyebrow">FULL FILM / &#24402;&#22303;&#24494;&#30005;&#24433;&#23436;&#25972;&#25918;&#26144;</p>
+            <h2>&#23436;&#25972;&#24433;&#29255;</h2>
+            <p>
+              &#20174;&#20919;&#23490;&#30340;&#22320;&#29699;&#36712;&#36947;&#65292;<br />
+              &#21040;&#31072;&#22530;&#37324;&#21319;&#36215;&#30340;&#19968;&#32533;&#39321;&#28895;&#12290;<br />
+              &#36825;&#19981;&#26159;&#19968;&#27425;&#32771;&#21476;&#20219;&#21153;&#65292;<br />
+              &#32780;&#26159;&#19968;&#27425;&#20851;&#20110;&#25925;&#20065;&#30340;&#30830;&#35748;&#12290;
+            </p>
+          </header>
+
+          <section class="film-player reveal" id="filmPlayer" aria-label="full film player">
+            <video
+              id="fullFilmVideo"
+              preload="metadata"
+              poster="assets/full-film-cover.png"
+              playsinline
+            >
+              <source src="assets/full-film.mp4" type="video/mp4" />
+            </video>
+
+            <button class="film-play-center" id="filmPlayCenter" type="button" aria-label="play full film">
+              <span></span>
+            </button>
+
+            <p class="film-subtitle" id="filmSubtitle" aria-live="polite"></p>
+
+            <div class="film-end-card" id="filmEndCard" aria-hidden="true">
+              <p>&#25991;&#26126;&#19981;&#26159;&#34987;&#24102;&#36208;&#25165;&#24471;&#20197;&#20445;&#23384;&#65292;&#32780;&#26159;&#34987;&#35760;&#24471;&#65292;&#25165;&#27809;&#26377;&#28040;&#22833;&#12290;</p>
+            </div>
+
+            <div class="film-controls" id="filmControls">
+              <button id="filmToggle" type="button" aria-label="play or pause">▶</button>
+              <span id="filmCurrent">00:00</span>
+              <input id="filmProgress" type="range" min="0" max="1000" value="0" aria-label="film progress" />
+              <span id="filmDuration">03:00</span>
+              <button id="filmMute" type="button" aria-label="mute or unmute">VOL</button>
+              <button id="filmCaption" type="button" aria-label="toggle Chinese subtitles">CC</button>
+              <button id="filmFullscreen" type="button" aria-label="fullscreen">⛶</button>
+            </div>
+          </section>
+
+          <aside class="film-info reveal">
+            <div>
+              <span>&#29255;&#21517;</span>
+              <b>&#24402;&#22303;</b>
+            </div>
+            <div>
+              <span>&#31867;&#22411;</span>
+              <b>&#31185;&#24187; / &#25991;&#26126;&#25506;&#32034; / &#20154;&#25991;&#24773;&#24863;</b>
+            </div>
+            <div>
+              <span>&#20027;&#39064;</span>
+              <b>&#25991;&#26126;&#23547;&#26681;&#12289;&#31934;&#31070;&#21407;&#20065;&#12289;&#20013;&#21326;&#25991;&#21270;&#35760;&#24518;</b>
+            </div>
+            <p>
+              &#30334;&#24180;&#20197;&#21518;&#65292;&#20154;&#31867;&#37325;&#36820;&#27515;&#23490;&#22320;&#29699;&#65292;&#23547;&#25214;&#34987;&#36951;&#24536;&#30340;&#25991;&#26126;&#36951;&#23384;&#12290;&#26368;&#32456;&#20182;&#20204;&#21457;&#29616;&#65292;&#25991;&#26126;&#19981;&#26159;&#34987;&#19978;&#20256;&#30340;&#25968;&#25454;&#65292;&#32780;&#26159;&#20154;&#31867;&#20173;&#28982;&#35760;&#24471;&#33258;&#24049;&#20174;&#21738;&#37324;&#26469;&#12290;
+            </p>
+            <blockquote>&#8220;&#25991;&#26126;&#19981;&#26159;&#34987;&#20445;&#23384;&#25165;&#23384;&#22312;&#65292;&#32780;&#26159;&#34987;&#35760;&#24471;&#65292;&#25165;&#27809;&#26377;&#28040;&#22833;&#12290;&#8221;</blockquote>
+          </aside>
+
+          <footer class="film-closing reveal">
+            <h3>&#12298;&#24402;&#22303;&#12299;&#19981;&#26159;&#20851;&#20110;&#20154;&#31867;&#36820;&#22238;&#22320;&#29699;&#30340;&#25925;&#20107;&#65292;<br />&#32780;&#26159;&#20851;&#20110;&#19968;&#20010;&#25991;&#26126;&#22914;&#20309;&#34987;&#37325;&#26032;&#35760;&#36215;&#12290;</h3>
+            <p>&#24403;&#26368;&#21518;&#19968;&#32533;&#39321;&#28895;&#21319;&#36215;&#65292;&#22833;&#33853;&#30340;&#25991;&#26126;&#32456;&#20110;&#34987;&#21518;&#20154;&#35760;&#36215;&#12290;</p>
+          </footer>
+          <p class="film-members">&#32452;&#21592;&#65306;&#27784;&#24191;&#36745; &#29579;&#38064;&#21894; &#36213;&#24515;&#24609;</p>
+        </div>
+      </section>
+    </main>
+
+    <dialog class="lightbox" id="lightbox">
+      <button class="lightbox-close" type="button" aria-label="关闭">×</button>
+      <img id="lightboxImage" alt="" />
+      <p id="lightboxCaption"></p>
+    </dialog>
+
+    <dialog class="person-modal" id="personModal">
+      <button class="person-modal-close" type="button" aria-label="关闭">×</button>
+      <article class="person-comet-card" id="personCometCard">
+        <div class="person-comet-media">
+          <img id="personModalImage" alt="" />
+        </div>
+        <div class="person-comet-copy">
+          <p class="eyebrow">MISSION ARCHIVE</p>
+          <h3 id="personModalTitle"></h3>
+          <p id="personModalRole"></p>
+          <b id="personModalKeywords"></b>
+          <small id="personModalArc"></small>
+        </div>
+      </article>
+    </dialog>
+
+    <dialog class="plan-modal" id="planModal">
+      <button class="plan-modal-close" type="button" aria-label="关闭">×</button>
+      <article class="plan-comet-card" id="planCometCard">
+        <img id="planModalImage" alt="" />
+      </article>
+    </dialog>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
